@@ -9,7 +9,12 @@ export default defineConfig({
 	build: {
 		outDir: "./dist",
 		rollupOptions: {
-			input: "./index.html",
+			input: {
+				main: "./index.html",
+				//other: "./src/*.js",
+				//util: "./utils/myUtil.js",
+				// Add more files as needed
+			},
 		},
 	},
 });
