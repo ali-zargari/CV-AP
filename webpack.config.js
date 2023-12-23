@@ -10,7 +10,7 @@ export default {
 	entry: "./src/components/entry_point/index.jsx",
 	output: {
 		path: path.resolve(__dirname, "dist"),
-		filename: "[name].[contenthash].bundle.js",
+		filename: "[name].[hash].bundle.js",
 		publicPath: "/",
 	},
 	devServer: {
@@ -34,7 +34,15 @@ export default {
 			},
 			{
 				test: /\.(jpg|jpeg|png|gif|mp3|svg)$/i,
-				use: ["file-loader"],
+				use: [
+					{
+						loader: "file-loader",
+						options: {
+							name: "[name].[hash].[ext]",
+							outputPath: "assets/images/",
+						},
+					},
+				],
 			},
 		],
 	},

@@ -18,3 +18,9 @@ function result_panel() {
 }
 
 export default result_panel;
+
+//whats above is a place holder.
+//TODO:
+// 1- divide the result panel into 3 sections (Use a flexbox)
+// 2- load up and print the information from the input panel
+// 3- each flex section will load up a different set of information

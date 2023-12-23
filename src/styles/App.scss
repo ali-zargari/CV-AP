@@ -6,15 +6,19 @@ $link-hover-color-light: #747bff;
 $button-bg-color: #1a1a1a;
 $button-bg-color-light: #f9f9f9;
 $button-hover-border: #646cff;
+$outer-margin: 60px;
 
-:root {
+
+:root{
+
+	box-sizing: border-box;
 	font-family: $primary-font;
 	line-height: 1.5;
 	font-weight: 400;
+	height: 100vh;
 
 	color-scheme: light dark;
 	color: $primary-color;
-	background-color: #242424;
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
@@ -23,6 +27,11 @@ $button-hover-border: #646cff;
 	-webkit-text-size-adjust: 100%;
 
 	text-align: center;
+
+	border-radius: 5px;
+	border: 1px solid transparent;
+
+	overflow: hidden;
 
 	@media (prefers-color-scheme: light) {
 		color: #213547;
@@ -40,21 +49,6 @@ $button-hover-border: #646cff;
 			@media (prefers-color-scheme: light) {
 				color: $link-hover-color-light;
 			}
-		}
-	}
-
-	body {
-		margin: 0;
-		display: flex;
-		place-items: center;
-		min-width: 320px;
-		min-height: 100vh;
-
-		#root {
-			width: 100%;
-			height: 100%;
-			display: flex;
-			flex-direction: row;
 		}
 	}
 
@@ -86,6 +80,75 @@ $button-hover-border: #646cff;
 
 		@media (prefers-color-scheme: light) {
 			background-color: $button-bg-color-light;
+		}
+	}
+
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		//background-image: url("../assets/images/bkgnd.jpg");
+		//set background image to the image in the assets/images folder
+		background-repeat: no-repeat;
+		background-size: cover;
+
+
+		#root {
+
+			display: flex;
+			//gap: 10px;
+			flex-direction: column;
+			border: 1px solid transparent;
+			margin: $outer-margin;
+
+			width: calc(100% - 2*$outer-margin); /* Adjust 20px to your actual margin */
+			height: calc(100% - 2*$outer-margin); /* Adjust 20px to your actual margin */
+
+			#header {
+				flex: 0 0 50px;
+				border-radius: 20px 20px 0 0; /* top-left, top-right, bottom-right, bottom-left */
+				border: 1px solid transparent;
+				background-color: #ff0000;
+
+				// Add your styles for the header here
+
+			}
+
+			#content {
+				flex: 1;
+				//gap: 5px;
+				display: flex;
+				flex-direction: row;
+
+
+				.info {
+					flex: 0 0 30%;
+					border: 1px solid transparent;
+					background-color: #00ff00;
+
+					// Add your styles for the info panel here
+
+				}
+
+				.result {
+					flex: 1;
+					border: 1px solid transparent;
+					background-color: #0000ff;
+
+					// Add your styles for the content here
+
+				}
+			}
+
+			#footer {
+				flex: 0 0 50px;
+				border-radius: 0 0 10px 10px; /* top-left, top-right, bottom-right, bottom-left */
+				border: 1px solid transparent;
+				background-color: #0ea238;
+
+				// Add your styles for the footer here
+
+			}
 		}
 	}
 }

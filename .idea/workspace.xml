@@ -4,25 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a778f6f3-ccb1-4885-bf5e-5ba2aaefb964" name="Changes" comment="fixed minor bug.">
-      <change afterPath="$PROJECT_DIR$/src/components/input_panel/input_panel.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/result_panel/result_panel.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/App.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/App.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/info.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/result.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.cjs" afterDir="false" />
+    <list default="true" id="a778f6f3-ccb1-4885-bf5e-5ba2aaefb964" name="Changes" comment="Refactoring,&#10;layout">
+      <change afterPath="$PROJECT_DIR$/src/assets/images/bkgnd.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/footer/footer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/input_panel/education.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/input_panel/experience.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/input_panel/personal_info.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/result_panel/education_r.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/result_panel/experience_r.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/result_panel/personal_r.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Info.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/result.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/root/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/entry_point/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/style.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/style.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/entry_point/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/entry_point/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/result_panel/result_panel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/result_panel/result_panel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/App.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,11 +97,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\aliza\WebstormProjects\CV-App\src\assets\images" />
+      <recent name="C:\Users\aliza\WebstormProjects\CV-App\src\assets" />
       <recent name="C:\Users\aliza\WebstormProjects\CV-App\src\components\info_panel" />
       <recent name="C:\Users\aliza\WebstormProjects\CV-App\src\components\result" />
       <recent name="C:\Users\aliza\WebstormProjects\CV-App\src\front-end" />
-      <recent name="C:\Users\aliza\WebstormProjects\CV-App\src\assets" />
-      <recent name="C:\Users\aliza\WebstormProjects\CV-App" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dist_test">
@@ -201,7 +197,9 @@
       <workItem from="1702851621425" duration="8457000" />
       <workItem from="1702870319506" duration="5461000" />
       <workItem from="1702880243153" duration="6612000" />
-      <workItem from="1703047119707" duration="3428000" />
+      <workItem from="1703047119707" duration="5170000" />
+      <workItem from="1703193077223" duration="597000" />
+      <workItem from="1703295252897" duration="15874000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />
@@ -315,7 +313,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702874816616</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Refactoring,&#10;layout">
+      <option name="closed" value="true" />
+      <created>1703051641810</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1703051641810</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,6 +355,7 @@
     <MESSAGE value="Refactoring &#10;cleaning up" />
     <MESSAGE value="Can now serve dist folder to the server ot test final product." />
     <MESSAGE value="fixed minor bug." />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed minor bug." />
+    <MESSAGE value="Refactoring,&#10;layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>
