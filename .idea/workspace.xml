@@ -4,22 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a778f6f3-ccb1-4885-bf5e-5ba2aaefb964" name="Changes" comment="Refactoring,&#10;layout">
-      <change afterPath="$PROJECT_DIR$/src/assets/images/bkgnd.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/footer/footer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/input_panel/education.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/input_panel/experience.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/input_panel/personal_info.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/result_panel/education_r.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/result_panel/experience_r.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/result_panel/personal_r.jsx" afterDir="false" />
+    <list default="true" id="a778f6f3-ccb1-4885-bf5e-5ba2aaefb964" name="Changes" comment="Add footer and header components, update styling and layout&#10;&#10;Created new components, Header and Footer, which have been added to the main layout. Updated styling in App.scss to support new components and layout. Result panel has been updated with important development comments and entry point now includes body background image. The Webpack configuration file has also been updated to handle these changes.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/entry_point/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/entry_point/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/result_panel/result_panel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/result_panel/result_panel.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +187,7 @@
       <workItem from="1702880243153" duration="6612000" />
       <workItem from="1703047119707" duration="5170000" />
       <workItem from="1703193077223" duration="597000" />
-      <workItem from="1703295252897" duration="15874000" />
+      <workItem from="1703295252897" duration="17999000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />
@@ -321,7 +309,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703051641810</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Add footer and header components, update styling and layout&#10;&#10;Created new components, Header and Footer, which have been added to the main layout. Updated styling in App.scss to support new components and layout. Result panel has been updated with important development comments and entry point now includes body background image. The Webpack configuration file has also been updated to handle these changes.">
+      <option name="closed" value="true" />
+      <created>1703311304049</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1703311304049</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,6 +352,7 @@
     <MESSAGE value="Can now serve dist folder to the server ot test final product." />
     <MESSAGE value="fixed minor bug." />
     <MESSAGE value="Refactoring,&#10;layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Add footer and header components, update styling and layout&#10;&#10;Created new components, Header and Footer, which have been added to the main layout. Updated styling in App.scss to support new components and layout. Result panel has been updated with important development comments and entry point now includes body background image. The Webpack configuration file has also been updated to handle these changes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add footer and header components, update styling and layout&#10;&#10;Created new components, Header and Footer, which have been added to the main layout. Updated styling in App.scss to support new components and layout. Result panel has been updated with important development comments and entry point now includes body background image. The Webpack configuration file has also been updated to handle these changes." />
   </component>
 </project>

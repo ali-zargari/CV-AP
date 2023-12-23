@@ -6,7 +6,10 @@ $link-hover-color-light: #747bff;
 $button-bg-color: #1a1a1a;
 $button-bg-color-light: #f9f9f9;
 $button-hover-border: #646cff;
-$outer-margin: 60px;
+$outer-margin: 0px;
+$outer-padding: 60px;
+
+
 
 
 :root{
@@ -31,7 +34,7 @@ $outer-margin: 60px;
 	border-radius: 5px;
 	border: 1px solid transparent;
 
-	overflow: hidden;
+	//overflow: hidden;
 
 	@media (prefers-color-scheme: light) {
 		color: #213547;
@@ -83,15 +86,18 @@ $outer-margin: 60px;
 		}
 	}
 
+
+
 	body {
 		height: 100%;
 		margin: 0;
-		padding: 0;
+		padding: $outer-padding;
 		//background-image: url("../assets/images/bkgnd.jpg");
 		//set background image to the image in the assets/images folder
-		background-repeat: no-repeat;
+		//background-repeat: no-repeat;
 		background-size: cover;
-
+		//make background blurry
+		backdrop-filter: blur(8px);
 
 		#root {
 
@@ -104,9 +110,11 @@ $outer-margin: 60px;
 			width: calc(100% - 2*$outer-margin); /* Adjust 20px to your actual margin */
 			height: calc(100% - 2*$outer-margin); /* Adjust 20px to your actual margin */
 
+
+
 			#header {
 				flex: 0 0 50px;
-				border-radius: 20px 20px 0 0; /* top-left, top-right, bottom-right, bottom-left */
+				border-radius: 10px 10px 0 0; /* top-left, top-right, bottom-right, bottom-left */
 				border: 1px solid transparent;
 				background-color: #ff0000;
 
