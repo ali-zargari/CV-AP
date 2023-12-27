@@ -10,8 +10,14 @@ function info_panel() {
 
 	return (
 		<div className="info">
-			<h1>Info Panel</h1>
-			<button onClick={handleClick}>Increment</button>
+			<h2>Info Panel</h2>
+			<div id="education">
+				<button onClick={handleClick}>Increment</button>
+			</div>
+
+			<div>
+
+			</div>
 		</div>
 	);
 }

@@ -6,8 +6,8 @@ $link-hover-color-light: #747bff;
 $button-bg-color: #1a1a1a;
 $button-bg-color-light: #f9f9f9;
 $button-hover-border: #646cff;
-$outer-margin: 0px;
-$outer-padding: 60px;
+$root-margin: 0px; // margin for root
+$body-padding: 60px; // padding for the body
 
 
 
@@ -89,26 +89,31 @@ $outer-padding: 60px;
 
 
 	body {
-		height: 100%;
+		//IMPORTANT
+		height: 100vh;
+		width: 100vw;
+		display: table;
+		//IMPORTANT
+
+
 		margin: 0;
-		padding: $outer-padding;
+		padding: $body-padding;
 		//background-image: url("../assets/images/bkgnd.jpg");
 		//set background image to the image in the assets/images folder
 		//background-repeat: no-repeat;
 		background-size: cover;
-		//make background blurry
-		backdrop-filter: blur(8px);
+		backdrop-filter: grayscale(50%) brightness(80%) blur(8px);
 
 		#root {
-
 			display: flex;
 			//gap: 10px;
 			flex-direction: column;
 			border: 1px solid transparent;
-			margin: $outer-margin;
+			margin: $root-margin;
 
-			width: calc(100% - 2*$outer-margin); /* Adjust 20px to your actual margin */
-			height: calc(100% - 2*$outer-margin); /* Adjust 20px to your actual margin */
+
+			width: calc(100% - 2* $root-margin); /* Adjust 20px to your actual margin */
+			min-height: calc(100% - 2* $root-margin); /* Adjust 20px to your actual margin */
 
 
 
@@ -138,14 +143,25 @@ $outer-padding: 60px;
 
 				}
 
-				.result {
+				#review {
 					flex: 1;
 					border: 1px solid transparent;
 					background-color: #0000ff;
 
-					// Add your styles for the content here
+					//
 
 				}
+			}
+
+			#result {
+				flex: 2;
+				border: 1px solid transparent;
+				background-color: #0000ff;
+
+				// Add your styles for the content here
+				// set minimum height to A4 size
+				min-height: 297mm;
+
 			}
 
 			#footer {

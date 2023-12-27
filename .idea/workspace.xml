@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a778f6f3-ccb1-4885-bf5e-5ba2aaefb964" name="Changes" comment="Add footer and header components, update styling and layout&#10;&#10;Created new components, Header and Footer, which have been added to the main layout. Updated styling in App.scss to support new components and layout. Result panel has been updated with important development comments and entry point now includes body background image. The Webpack configuration file has also been updated to handle these changes.">
+    <list default="true" id="a778f6f3-ccb1-4885-bf5e-5ba2aaefb964" name="Changes" comment="Fixed background filter bug.">
+      <change afterPath="$PROJECT_DIR$/src/components/result_panel/review_panel.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/input_panel/input_panel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input_panel/input_panel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/result_panel/result_panel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/result_panel/result_panel.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/App.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +37,7 @@
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
         <option name="accountId" value="94b9eab8-0ec2-4a3d-ad4a-a8fd1757fd27" />
-        <option name="url" value="https://github.com/ali-zargari/Planify.git" />
+        <option name="url" value="https://github.com/ali-zargari/CV-App.git" />
       </UrlAndAccount>
     </option>
   </component>
@@ -187,7 +190,8 @@
       <workItem from="1702880243153" duration="6612000" />
       <workItem from="1703047119707" duration="5170000" />
       <workItem from="1703193077223" duration="597000" />
-      <workItem from="1703295252897" duration="17999000" />
+      <workItem from="1703295252897" duration="19241000" />
+      <workItem from="1703637648390" duration="3483000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />
@@ -317,7 +321,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703311304049</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Fixed background filter bug.">
+      <option name="closed" value="true" />
+      <created>1703313416651</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1703313416651</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,6 +365,7 @@
     <MESSAGE value="fixed minor bug." />
     <MESSAGE value="Refactoring,&#10;layout" />
     <MESSAGE value="Add footer and header components, update styling and layout&#10;&#10;Created new components, Header and Footer, which have been added to the main layout. Updated styling in App.scss to support new components and layout. Result panel has been updated with important development comments and entry point now includes body background image. The Webpack configuration file has also been updated to handle these changes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add footer and header components, update styling and layout&#10;&#10;Created new components, Header and Footer, which have been added to the main layout. Updated styling in App.scss to support new components and layout. Result panel has been updated with important development comments and entry point now includes body background image. The Webpack configuration file has also been updated to handle these changes." />
+    <MESSAGE value="Fixed background filter bug." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed background filter bug." />
   </component>
 </project>
