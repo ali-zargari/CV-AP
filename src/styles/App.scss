@@ -90,9 +90,10 @@ $body-padding: 60px; // padding for the body
 
 	body {
 		//IMPORTANT
-		height: 100vh;
-		width: 100vw;
+		box-sizing: border-box;
 		display: table;
+		width: 100%;
+		min-height: 100%;
 		//IMPORTANT
 
 
