@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a778f6f3-ccb1-4885-bf5e-5ba2aaefb964" name="Changes" comment="fixed background bug,&#10;design change">
-      <change afterPath="$PROJECT_DIR$/src/components/review_panel/review_item.jsx" afterDir="false" />
+    <list default="true" id="a778f6f3-ccb1-4885-bf5e-5ba2aaefb964" name="Changes" comment="Refactor components and styles for better functionality&#10;&#10;The input panel now includes toggleable tabs, each with their own form for user input. A submission event has been added for these forms. Styles for the application have also been significantly refactored to include new styles for the tabs and forms, and to improve layout and responsiveness. Outdated code has been removed in the review and result panels, and new structure has been added for displaying user info.&#10;&#10;Still not fully functional.&#10;&#10;TODO:&#10;&#10;Pass info from info to review components, and from review to result.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/input_panel/education.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input_panel/education.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/input_panel/experience.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input_panel/experience.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/input_panel/input_panel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input_panel/input_panel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/input_panel/personal_info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input_panel/personal_info.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/result_panel/review_panel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/review_panel/review_panel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/result_panel/result_panel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/result_panel/result_panel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/review_panel/review_panel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/review_panel/review_panel.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/App.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -194,7 +193,8 @@
       <workItem from="1703047119707" duration="5170000" />
       <workItem from="1703193077223" duration="597000" />
       <workItem from="1703295252897" duration="19241000" />
-      <workItem from="1703637648390" duration="17089000" />
+      <workItem from="1703637648390" duration="17696000" />
+      <workItem from="1703797357219" duration="12846000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />
@@ -348,7 +348,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703641651142</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Refactor components and styles for better functionality&#10;&#10;The input panel now includes toggleable tabs, each with their own form for user input. A submission event has been added for these forms. Styles for the application have also been significantly refactored to include new styles for the tabs and forms, and to improve layout and responsiveness. Outdated code has been removed in the review and result panels, and new structure has been added for displaying user info.&#10;&#10;Still not fully functional.&#10;&#10;TODO:&#10;&#10;Pass info from info to review components, and from review to result.">
+      <option name="closed" value="true" />
+      <created>1703659973714</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1703659973714</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,6 +394,7 @@
     <MESSAGE value="Add footer and header components, update styling and layout&#10;&#10;Created new components, Header and Footer, which have been added to the main layout. Updated styling in App.scss to support new components and layout. Result panel has been updated with important development comments and entry point now includes body background image. The Webpack configuration file has also been updated to handle these changes." />
     <MESSAGE value="Fixed background filter bug." />
     <MESSAGE value="fixed background bug,&#10;design change" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Refactor components and styles for better functionality&#10;&#10;The input panel now includes toggleable tabs, each with their own form for user input. A submission event has been added for these forms. Styles for the application have also been significantly refactored to include new styles for the tabs and forms, and to improve layout and responsiveness. Outdated code has been removed in the review and result panels, and new structure has been added for displaying user info.&#10;&#10;Still not fully functional.&#10;&#10;TODO:&#10;&#10;Pass info from info to review components, and from review to result." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor components and styles for better functionality&#10;&#10;The input panel now includes toggleable tabs, each with their own form for user input. A submission event has been added for these forms. Styles for the application have also been significantly refactored to include new styles for the tabs and forms, and to improve layout and responsiveness. Outdated code has been removed in the review and result panels, and new structure has been added for displaying user info.&#10;&#10;Still not fully functional.&#10;&#10;TODO:&#10;&#10;Pass info from info to review components, and from review to result." />
   </component>
 </project>

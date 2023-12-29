@@ -1,8 +1,26 @@
 import "../../styles/info.scss";
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 
-function InfoPanel(onInfoChange) {
+function InfoPanel(props) {
+
+	const input = {
+		name: "",
+		email: "",
+		phone: "",
+		website: "",
+		address: "",
+		summary: "",
+		education: [],
+		experience: [],
+		skills: [],
+	};
+
 	const [activeTabs, setActiveTabs] = useState([false, false]);
+	const [personalInfo, setPersonalInfo] = useState({ ...input, name: "test", email: "test", phone: "test" });
+	const [educationInfo, setEducationInfo] = useState({ ...input, education: [{ school: "test", degree: "test", start: "test", end: "test" }] });
+	const [experienceInfo, setExperienceInfo] = useState({ ...input, experience: [{ company: "test", position: "test", start: "test", end: "test" }] });
+
 
 	const toggleTab = (index, event) => {
 		event.stopPropagation();
@@ -13,7 +31,17 @@ function InfoPanel(onInfoChange) {
 
 	const handleSubmit = event => {
 		event.preventDefault();
-		onInfoChange();
+
+		const data = {
+			name: event.target.name.value,
+			email: event.target.email.value,
+			phone: event.target.phone.value,
+		};
+
+		setPersonalInfo({ ...personalInfo, data});
+
+		props.onFormSubmit(data);
+
 	};
 
 	return (
@@ -23,8 +51,16 @@ function InfoPanel(onInfoChange) {
 				{activeTabs[0] &&
 					<form className="form" onSubmit={handleSubmit}>
 						<label>
-							Name:
+							<p>Name:</p>
 							<input type="text" name="name" />
+						</label>
+						<label>
+							<p>Email:</p>
+							<input type="email" name="email" />
+						</label>
+						<label>
+							<p>Phone Number</p>
+							<input type="number" name="phone" />
 						</label>
 						<input type="submit" value="Submit" />
 					</form>
@@ -45,5 +81,11 @@ function InfoPanel(onInfoChange) {
 		</div>
 	);
 }
+
+// this makes sure that the onFormSubmit is a function
+InfoPanel.propTypes = {
+	onFormSubmit: PropTypes.func.isRequired,
+
+};
 
 export default InfoPanel;

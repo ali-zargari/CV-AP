@@ -18,7 +18,6 @@ $body-padding: 60px; // padding for the body
 	font-family: $primary-font;
 	line-height: 1.5;
 	font-weight: 400;
-	height: 100vh;
 
 	color-scheme: light dark;
 	color: $primary-color;
@@ -93,14 +92,10 @@ $body-padding: 60px; // padding for the body
 		box-sizing: border-box;
 		display: table;
 		width: 100%;
-		min-height: 100%;
 		margin: 0;
 		//IMPORTANT
 
 		padding: $body-padding;
-		//background-image: url("../assets/images/bkgnd.jpg");
-		//set background image to the image in the assets/images folder
-		//background-repeat: no-repeat;
 		background-size: cover;
 		backdrop-filter: grayscale(50%) brightness(80%) blur(8px);
 
@@ -134,7 +129,7 @@ $body-padding: 60px; // padding for the body
 				display: flex;
 				flex-direction: row;
 				min-height: 800px;
-
+				min-width: 210mm;
 
 				#info {
 					flex: 0 0 35%;
@@ -142,7 +137,6 @@ $body-padding: 60px; // padding for the body
 					background-color: #00ff00;
 
 					// Add your styles for the info panel here
-
 					.tab {
 						/* Style as needed */
 						cursor: pointer;
@@ -153,7 +147,37 @@ $body-padding: 60px; // padding for the body
 						max-height: 0;
 						overflow: hidden;
 						transition: max-height 0.2s ease-in-out;
+						display: flex;
+						flex-direction: column;
+
+						label{
+							//format label so that p is on the left, and the text box is on the right
+							display: flex;
+							flex-direction: row;
+							justify-content: space-between;
+							margin: 0 10px;
+							gap: 5px;
+
+							p{
+								flex: 0.7;
+							}
+							input{
+								flex: 1;
+								align-self: center;
+							}
+
+						}
+
+						//add margin to whats not a label
+						> :not(label) {
+							//margin: 10px 0;
+							width: 100px;
+							align-self: center;
+						}
+
 					}
+
+
 
 					.active .form {
 						max-height: 500px; /* Adjust this to a value larger than your form's actual height */

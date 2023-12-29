@@ -1,8 +1,9 @@
 import "../../styles/result.scss";
 
-function review_panel() {
+function review_panel(props) {
 
 
+	console.log(props);
 
 	return (
 		<div id="review">
@@ -34,6 +35,7 @@ function review_panel() {
 		</div>
 	);
 }
+
 
 export default review_panel;
 

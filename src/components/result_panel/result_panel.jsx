@@ -1,9 +1,15 @@
 import "../../styles/App.scss";
+import { func } from "prop-types";
 //import {useEffect } from "react";
 
 
 function Result(){
 	//just a place holder to use all imports
+
+
+
+	//print();
+
 	return(
 		<>
 			<div id="result">
@@ -11,8 +17,6 @@ function Result(){
 			</div>
 		</>
 	);
-
-
 }
 
 export default Result;
