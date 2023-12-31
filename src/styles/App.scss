@@ -189,30 +189,43 @@ $body-padding: 60px; // padding for the body
 					border: 1px solid transparent;
 					background-color: #eaeaea;
 
+					display: flex;
+					flex-direction: column;
+
+					h1{
+						height: 30px;
+						margin-top: 10px;
+					}
+
 					.section {
-						h2:after {
-							align-content: center;
-							content: "";
-							display: block;
-							width: 50%;
-							height: 1px;
-							background-color: #000000;
-							margin: 0 auto;
+						flex: 1;
+						display: flex;
+						flex-direction: column;
+						margin: 0 7px;
+
+						h2{
+							flex: 0.2;
+							//content: "";
+							//display: block;
+							//width: 50%;
+							//justify-self: center;
+							//height: 1px;
+							//background-color: #000000;
+							//margin: 0 auto;
 							//center the line
 
 						}
 
-						.item_contanier{
+						.item_container{
+							flex: 1;
+							color: #535bf2;
 							display: flex;
 							flex-direction: row;
 							flex-wrap: wrap;
 							justify-content: space-evenly;
-							align-items: center;
-							align-content: center;
-							//gap: 10px;
-							margin: 0 auto;
-							//border: 1px solid transparent;
-							//background-color: #ff0000;
+							gap: 5px;
+							height: 100%;
+							width: 250px;
 
 							.item {
 								flex: 0 0 200px;

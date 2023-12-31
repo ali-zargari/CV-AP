@@ -41,6 +41,7 @@ function InfoPanel(props) {
 		setPersonalInfo({ ...personalInfo, data});
 
 		props.onFormSubmit(data);
+		console.log(personalInfo);
 
 	};
 
